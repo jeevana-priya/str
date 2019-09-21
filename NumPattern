@@ -12,11 +12,11 @@ for(i=0;i<n;i++){
    }
   if(j%2==0){
     y=x+i-j+1;
-    printf("%d",y); 
+    printf("%d ",y); 
    }
   else{
    y=X+n-i;
-   printf("%d",y);
+   printf("%d ",y);
   }
   }
  printf("\n");
