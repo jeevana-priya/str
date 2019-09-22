@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<string.h>
+sturct node
+{ int data;
+struct node*next;
+};
+struct node *addnode(struct node*h){
+struct node *newnode=(struct node *)malloc(sizeof(struct node *));
+scanf("%d",&newnode->data);
+newnode->next=NULL;
+h->next=newnode;
+return newnode;
+}
+int main()
+{
+ struct node *temp;
+
+int size;
+printf("enter the size:");
+scanf("%d",&size);
+struct node *headnode=(struct node *)malloc(sizof(struct node *));
+printf("enter elements:");
+scanf("%d",&headnode->data);
+headnode->next=NULL;
+temp=headnode;
+size--;
+while(size>0)
+{
+ temp=addnode(temp);
+size--;
+}
+while(temp->headnode)
+{
+temp--;
+}
+printf("the %d",temp->data);
+return 0;
+}
